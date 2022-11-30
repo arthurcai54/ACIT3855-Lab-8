@@ -8,7 +8,7 @@ export default function AppStats() {
 
 	const getStats = () => {
 	
-        fetch(`http://<Cloud DNS>:8100/stats`)
+        fetch(`http://3.236.99.22:8100/stats`)
             .then(res => res.json())
             .then((result)=>{
 				console.log("Received Stats")
@@ -32,24 +32,21 @@ export default function AppStats() {
         return(
             <div>
                 <h1>Latest Stats</h1>
-                <table className={"StatsTable"}>
+                <table className={"max_stats"}>
 					<tbody>
 						<tr>
-							<th>Blood Pressure</th>
-							<th>Heart Rate</th>
+							<th>Sale of Item</th>
+							<th>Number of Sales</th>
 						</tr>
 						<tr>
-							<td># BP: {stats['num_bp_readings']}</td>
-							<td># HR: {stats['num_hr_readings']}</td>
+							<td># times bought before: {stats['max_num_times_bought_before']}</td>
+							<td># vans needed: {stats['max_num_vans_needed']}</td>
 						</tr>
 						<tr>
-							<td colspan="2">Max BP Systolic: {stats['max_bp_sys_reading']}</td>
+							<td colspan="2">Max number of times bought before: {stats['max_num_times_bought_before']}</td>
 						</tr>
 						<tr>
-							<td colspan="2">Max BR Diastolic: {stats['max_bp_dia_reading']}</td>
-						</tr>
-						<tr>
-							<td colspan="2">Max HR: {stats['max_bp_sys_reading']}</td>
+							<td colspan="2">Max number of vans needed: {stats['max_num_vans_needed']}</td>
 						</tr>
 					</tbody>
                 </table>
