@@ -22,5 +22,3 @@
 2022-11-17 12:50:03,667 - basicLogger - INFO - Connecting to DB, Hostname:34.207.61.2, Port:3306
 2022-11-19 19:12:03,651 - basicLogger - INFO - Connecting to DB, Hostname:127.0.0.1, Port:3306
 2022-11-19 19:12:04,167 - basicLogger - INFO - Connecting to DB, Hostname:127.0.0.1, Port:3306
-2022-11-24 16:29:39,590 - basicLogger - INFO - Connecting to DB, Hostname:127.0.0.1, Port:3306
-2022-11-24 16:29:40,438 - basicLogger - INFO - Connecting to DB, Hostname:127.0.0.1, Port:3306
