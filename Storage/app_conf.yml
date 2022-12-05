@@ -7,6 +7,6 @@ datastore:
   db: events
 
 events:
-  hostname: 100.25.194.63
+  hostname: 54.175.143.193
   port: 9092
   topic: events

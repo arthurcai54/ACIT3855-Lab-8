@@ -8,7 +8,7 @@ export default function AppStats() {
 
 	const getStats = () => {
 	
-        fetch(`http://34.227.92.235:8100/stats`)
+        fetch(`http://54.175.143.193:8100/stats`)
             .then(res => res.json())
             .then((result)=>{
 				console.log("Received Stats")
